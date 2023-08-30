@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-4">Task Manager</h1>
+      <form id="taskForm" class="mt-4">
+        <input
+          type="text"
+          id="taskTitle"
+          class="form-control mb-2"
+          placeholder="Task Title"
+          required
+        />
+        <textarea
+          id="taskDescription"
+          class="form-control mb-2"
+          placeholder="Task Description"
+          required
+        ></textarea>
+        <button type="submit" id="addTask" class="btn btn-primary">
+          Add Task
+        </button>
+      </form>
+      <ul id="taskList" class="list-group mt-4">
+        <!-- Task items will be added here -->
+      </ul>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
